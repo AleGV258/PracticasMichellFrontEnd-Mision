@@ -20,9 +20,10 @@ Link del Repositorio: https://github.com/AleGV258/PracticasMichellFrontEnd-Misio
 - **En este Respositorio podrás encontrar las actividades y prácticas realizadas de FrontEnd-Mision:**
 	- [01 - INTRO](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%2001%20-%20INTRO)
 	- [02 - HTML](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%20%2002%20-%20HTML)
-	- [03 - CSS](.)
-	- [04 - JS](.)
-	- [05 - VUEJS](.)
-	- [06 - VUEX](.)
-	- [07 - ANGULAR](.)
-	- [08 - AZURE](.)
+	- [03 - CSS]
+	- [04 - JS]
+	- [05 - VUEJS]
+	- [06 - VUEX]
+	- [07 - ANGULAR]
+	- [08 - AZURE]
+
