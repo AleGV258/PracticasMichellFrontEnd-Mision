@@ -11,7 +11,7 @@ Por último, para desplegar el sitio, se debe navgar entre el directorio de page
 - **En esta carpeta podrás encontrar:**
 	- [Functions](./pages/JavaScript/functions.js)
 	- [Styles](./pages/CSS/style.css)
-	- [Index](.pages/HTML/index.html)
+	- [Index](./pages/HTML/index.html)
 	- [Página Cliente Home](./pages/HTML/seccion_home.html)
 	- [Página Cliente Pedidos](./pages/HTML/seccion_pedidos.html)
 	- [Página Cliente Conocenos](./pages/HTML/seccion_conocenos.html)
