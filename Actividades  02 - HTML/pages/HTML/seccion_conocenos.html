@@ -1,0 +1,88 @@
+<!-- GitHub: @AleGV258 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Conocenos</title>
+</head>
+<body onload="seccion_navegar(); background_banner();">
+    <div class="todo">
+        <!-- Banner Secundario -->
+        <div class="banner_secundario centrar_columna negro" id="banner">
+            <img src="../../assets/images/Logo.png" class="logo" alt="Cosmic Bakery Logo" name="Logo" style="width: 10%; height: 10%; padding: 1%; margin: 1%; transform: rotate(-15deg);">
+            <div class="centrar_fila" style="margin: 0 0 0 2%;">
+                <h2 style="font-size: 600%;">Conoce a tu Pastelería</h2>
+            </div>
+        </div>
+        <!-- Sección Navegar -->
+        <div class="seccion_navegar amarillo centrar_columna">
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="home();">
+                <h4>Home</h4>
+                <div class="barra_horizontal"></div>
+            </div>
+            <div class="barra_vertical"></div>
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="pedidos();">
+                <h4>Pedidos</h4>
+                <div class="barra_horizontal"></div>
+            </div>
+            <div class="barra_vertical"></div>
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="conocenos();">
+                <h4 id="navegacion">Conocenos</h4>
+                <div class="barra_horizontal" id="navegacion_seleccion"></div>
+            </div>
+        </div>
+        <!-- Sección Pedidos -->
+        <div>
+            <div class="centrar_fila">
+                <h5>¿Quiénes Somos?</h5>
+                <p class="texto_conocenos">¡Bienvenido! Somos tu pastelería favorita, hemos creado una cadena de pastelería que se dedica a solucionarte la vida cuando más necesitas un pastel, con decoración perfecta, a buen precio, y con envío a domicilio, disponemos de más de diez sucursales alrededor de la República Mexicana. No esperes más, cotiza un pastel Personalizado para tu evento u ocasión especial.</p>
+                <h5>Misión</h5>
+                <p class="texto_conocenos">Lograr crear el pastel perfecto para tu evento u ocasión especial, a un precio accesible y con la decoración y sabor que tú decidas.</p>
+                <h5>Visión</h5>
+                <p class="texto_conocenos">Deseamos establecernos en más municipios alrededor de la República Mexicana, además de, extender nuestra alta gama de sabores y decoraciones, para brindarte un mejor servicio.</p>
+                <h5>Valores</h5>
+                <p>
+                    <li class="texto_valores">Responsabilidad</li>
+                    <li class="texto_valores">Tolerancia</li>
+                    <li class="texto_valores">Respeto</li>
+                    <li class="texto_valores">Amor</li>
+                    <li class="texto_valores" style="margin: 0 9% 2% 9%;">Pulcritud</li>
+                </p>
+            </div>
+        </div>
+        <!-- Sección Contacto -->
+        <div id="contacto" class="negro centrar_columna">
+            <div class="centrar_fila">
+                <div>
+                    <h3>Contáctanos</h3>
+                </div>
+                <div class="centrar_columna">
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/mail.png" alt="Correo Electrónico" name="Mail"><br>
+                        <label class="texto_contacto" for="Mail">contacto@cosmicbk.com<br>cotizaciones@cosmicbk.com</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/phone.png" alt="Celular de Contacto" name="Cellphone"><br>
+                        <label class="texto_contacto" for="Cellphone">+52 (442) 439-2997<br>+33 (86) 753-1584</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/location.png" alt="Ubicación" name="Location"><br>
+                        <label class="texto_contacto" for="Location">AV. Madero NO. 752, Centro<br>CP: 76115. Querétaro, Qro.</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/schedule.png" alt="Horarios" name="Schedule"><br>
+                        <label class="texto_contacto" for="Schedule">Lunes a Viernes<br>9:00 a.m. - 6:00 p.m.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript/functions.js"></script>
+</body>
+</html>

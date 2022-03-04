@@ -1,0 +1,145 @@
+<!-- GitHub: @AleGV258 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Pedidos</title>
+</head>
+<body onload="seccion_navegar(); background_banner();">
+    <div class="todo">
+        <!-- Banner Secundario -->
+        <div class="banner_secundario centrar_columna negro" id="banner">
+            <img src="../../assets/images/Logo.png" class="logo" alt="Cosmic Bakery Logo" name="Logo" style="width: 10%; height: 10%; padding: 1%; margin: 1%; transform: rotate(-15deg);">
+            <div class="centrar_fila" style="margin: 0 0 0 2%;">
+                <h2>Haz tus pedidos</h2>
+            </div>
+        </div>
+        <!-- Sección Navegar -->
+        <div class="seccion_navegar amarillo centrar_columna">
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="home();">
+                <h4>Home</h4>
+                <div class="barra_horizontal"></div>
+            </div>
+            <div class="barra_vertical"></div>
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="pedidos();">
+                <h4 id="navegacion">Pedidos</h4>
+                <div class="barra_horizontal" id="navegacion_seleccion"></div>
+            </div>
+            <div class="barra_vertical"></div>
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="conocenos();">
+                <h4>Conocenos</h4>
+                <div class="barra_horizontal"></div>
+            </div>
+        </div>
+        <!-- Sección Pedidos -->
+        <div>
+            <form action="post" id="formulario_pedidos">
+                <div class="centrar_fila">
+                    <h5>Selecciona los sabores deseados:</h5>
+                    <div class="centrar_columna">
+                        <input type="checkbox" id="sabor1" name="sabor1" value="Chocolate">
+                        <label class="texto_seleccion" for="sabor1">Chocolate</label>
+                        <input type="checkbox" id="sabor2" name="sabor2" value="Vainilla">
+                        <label class="texto_seleccion" for="sabor2">Vainilla</label>
+                        <input type="checkbox" id="sabor3" name="sabor3" value="Fresa">
+                        <label class="texto_seleccion" for="sabor3">Fresa</label>
+                    </div>
+                    <div class="centrar_columna">
+                        <input type="checkbox" id="sabor4" name="sabor4" value="Pay Limón">
+                        <label class="texto_seleccion" for="sabor4">Pay de Limón</label>
+                        <input type="checkbox" id="sabor5" name="sabor5" value="Tres Leches">
+                        <label class="texto_seleccion" for="sabor5">Tres Leches</label>
+                        <input type="checkbox" id="sabor6" name="sabor6" value="Cajeta">
+                        <label class="texto_seleccion" for="sabor6">Cajeta</label>
+                    </div>
+                    <div class="centrar_columna">
+                        <input type="checkbox" id="sabor7" name="sabor7" value="Vino">
+                        <label class="texto_seleccion" for="sabor7">Vino</label>
+                        <input type="checkbox" id="sabor8" name="sabor8" value="Naranja">
+                        <label class="texto_seleccion" for="sabor8">Naranja</label>
+                        <input type="checkbox" id="sabor9" name="sabor9" value="Zanahor">
+                        <label class="texto_seleccion" for="sabor9">Zanahoria</label>
+                    </div>
+                </div>
+                <div class="centrar_fila">
+                    <h5>Selecciona los adornos deseados:</h5>
+                    <div class="centrar_columna">
+                        <input type="checkbox" id="adorno1" name="adorno1" value="Frutos Secos">
+                        <label class="texto_seleccion" for="adorno1">Frutos Secos</label>
+                        <input type="checkbox" id="adorno2" name="adorno2" value="Almendras">
+                        <label class="texto_seleccion" for="adorno2">Almendras</label>
+                        <input type="checkbox" id="adorno3" name="adorno3" value="Rosas">
+                        <label class="texto_seleccion" for="adorno3">Rosas</label>
+                    </div>
+                    <div class="centrar_columna">
+                        <input type="checkbox" id="adorno4" name="adorno4" value="Galletas">
+                        <label class="texto_seleccion" for="adorno4">Galletas</label>
+                        <input type="checkbox" id="adorno5" name="adorno5" value="Chocolates">
+                        <label class="texto_seleccion" for="adorno5">Chocolates</label>
+                        <input type="checkbox" id="adorno6" name="adorno6" value="Muñecos Boda">
+                        <label class="texto_seleccion" for="adorno6">Muñecos de Boda</label>
+                    </div>
+                    <div class="centrar_columna">
+                        <input type="checkbox" id="adorno7" name="adorno7" value="Fondant">
+                        <label class="texto_seleccion" for="adorno7">Fondant</label>
+                        <input type="checkbox" id="adorno8" name="adorno8" value="Chispas Colores">
+                        <label class="texto_seleccion" for="adorno8">Chispas de Colores</label>
+                        <input type="checkbox" id="adorno9" name="adorno9" value="Personalizado">
+                        <label class="texto_seleccion" for="adorno9">Personalizado</label>
+                    </div>
+                </div>
+                <div class="centrar_fila">
+                    <h5>Descripción y Características del Pastel:</h5>
+                    <input style="margin-bottom: 1%;" type="text" id="caracteristicas" name="caracteristicas" value="" placeholder="Escribe más detalladamente las características del pastel. En caso de estar satisfecho escribe 'NA'" required>
+                </div>
+                <div class="centrar_fila">
+                    <h5>Completa los campos de contacto:</h5>
+                    <label for="nombre" class="texto_seleccion" style="text-align: center; width: 100%; border: none;">Nombre del Solicitante</label><br>
+                    <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre" required>
+                    <label for="telefono" class="texto_seleccion" style="text-align: center; width: 100%; border: none;">Teléfono Celular</label><br>
+                    <input type="tel" id="telefono" name="telefono" value="" placeholder="Teléfono" required maxlength="18">
+                    <label for="correo" class="texto_seleccion" style="text-align: center; width: 100%; border: none;">Correo Electrónico</label><br>
+                    <input type="email" id="correo" name="correo" value="" placeholder="Correo" required>
+                    <div class="centrar_columna">
+                        <input type="submit" id="correo" name="correo" value="Enviar" placeholder="Correo">
+                        <input type="reset" id="correo" name="correo" value="Borrar" placeholder="Correo">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Sección Contacto -->
+        <div id="contacto" class="negro centrar_columna">
+            <div class="centrar_fila">
+                <div>
+                    <h3>Contáctanos</h3>
+                </div>
+                <div class="centrar_columna">
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/mail.png" alt="Correo Electrónico" name="Mail"><br>
+                        <label class="texto_contacto" for="Mail">contacto@cosmicbk.com<br>cotizaciones@cosmicbk.com</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/phone.png" alt="Celular de Contacto" name="Cellphone"><br>
+                        <label class="texto_contacto" for="Cellphone">+52 (442) 439-2997<br>+33 (86) 753-1584</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/location.png" alt="Ubicación" name="Location"><br>
+                        <label class="texto_contacto" for="Location">AV. Madero NO. 752, Centro<br>CP: 76115. Querétaro, Qro.</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/schedule.png" alt="Horarios" name="Schedule"><br>
+                        <label class="texto_contacto" for="Schedule">Lunes a Viernes<br>9:00 a.m. - 6:00 p.m.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript/functions.js"></script>
+</body>
+</html>
