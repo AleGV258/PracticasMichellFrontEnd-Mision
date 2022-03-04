@@ -18,5 +18,5 @@ Link del Repositorio: https://github.com/AleGV258/PracticasMichellFrontEnd-Misio
 ## Gracias por dedicarle tiempo a leer este documento y de revisar el repositorio ;)
 
 - **En este Respositorio podrás encontrar:**
-	- [01 - INTRO](./Actividades 01 - INTRO)
-	- [02 - HTML](./Actividades 02 - HTML)
+	- [01 - INTRO](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%2001%20-%20INTRO)
+	- [02 - HTML](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%20%2002%20-%20HTML)
