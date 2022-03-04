@@ -2,22 +2,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Pedidos</title>
 </head>
 <body onload="seccion_navegar(); background_banner();">
     <div class="todo">
-        <!-- Banner Secundario -->
+        <!-- Banner Secundario Usuario -->
         <div class="banner_secundario centrar_columna negro" id="banner">
-            <img src="../../assets/images/Logo.png" class="logo" alt="Cosmic Bakery Logo" name="Logo" style="width: 10%; height: 10%; padding: 1%; margin: 1%; transform: rotate(-15deg);">
+            <img src="../../assets/images/Logo.png" class="logo" alt="Cosmic Bakery Logo" name="Logo" onclick="index();">
             <div class="centrar_fila" style="margin: 0 0 0 2%;">
                 <h2>Haz tus pedidos</h2>
             </div>
         </div>
-        <!-- Sección Navegar -->
+        <!-- Sección Navegar Usuario -->
         <div class="seccion_navegar amarillo centrar_columna">
             <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="home();">
                 <h4>Home</h4>
@@ -34,7 +32,7 @@
                 <div class="barra_horizontal"></div>
             </div>
         </div>
-        <!-- Sección Pedidos -->
+        <!-- Sección Pedidos Usuario -->
         <div>
             <form action="post" id="formulario_pedidos">
                 <div class="centrar_fila">
@@ -110,7 +108,7 @@
                 </div>
             </form>
         </div>
-        <!-- Sección Contacto -->
+        <!-- Sección Contacto Usuario -->
         <div id="contacto" class="negro centrar_columna">
             <div class="centrar_fila">
                 <div>

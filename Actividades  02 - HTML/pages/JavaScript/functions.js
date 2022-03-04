@@ -36,6 +36,10 @@ function seccion_navegar(){
         seleccion.classList.add('blanco');
     }else if(seccion == "Conocenos"){
         seleccion.classList.add('blanco');
+    }else if(seccion == "Tablas"){
+        seleccion.classList.add('blanco');
+    }else if(seccion == "Stock"){
+        seleccion.classList.add('blanco');
     }
 }
 
@@ -48,4 +52,13 @@ function home(){
 }
 function conocenos(){
     location.href = "./seccion_conocenos.html";
+}
+function tabla(){
+    location.href = "./seccion_tablas.html";
+}
+function stock(){
+    location.href = "./seccion_stock.html";
+}
+function index(){
+    location.href = "./index.html";
 }

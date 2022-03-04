@@ -1,0 +1,123 @@
+<!-- GitHub: @AleGV258 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Tabla de Pedidos</title>
+</head>
+<body onload=" background_banner(); seccion_navegar();">
+    <div class="todo">
+        <!-- Banner Secundario Pastelero -->
+        <div class="banner_secundario centrar_columna negro" id="banner">
+            <img src="../../assets/images/Logo.png" class="logo" alt="Cosmic Bakery Logo" name="Logo" onclick="index();">
+            <div class="centrar_fila" style="margin: 0 0 0 2%;">
+                <h2>Tabla de Pedidos</h2>
+            </div>
+        </div>
+        <!-- Sección Navegar Pastelero -->
+        <div class="seccion_navegar amarillo centrar_columna">
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="tabla();">
+                <h4 id="navegacion">Tablas</h4>
+                <div class="barra_horizontal" id="navegacion_seleccion"></div>
+            </div>
+            <div class="barra_vertical"></div>
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="stock();">
+                <h4>Stock</h4>
+                <div class="barra_horizontal"></div>
+            </div>
+        </div>
+        <!-- Sección Pedidos Pastelero -->
+        <div class="centrar_fila">
+            <div class="centrar_columna">
+                <div class="pedido_cliente">
+                    <label class="texto_llave" for="nombre_cliente">Nombre del Cliente:</label>
+                    <p class="texto_valor" id="nombre_cliente" name="nombre_cliente" value="Nombre Cliente">Luís Arturo Gaitán</p><br><br>
+                    <label class="texto_llave" for="correo_cliente">Correo del Cliente:</label>
+                    <p class="texto_valor" id="correo_cliente" name="correo_cliente" value="Correo Cliente">lius.arturG@gmail.com</p><br><br>
+                    <label class="texto_llave" for="celular_cliente">Celular del Cliente:</label>
+                    <p class="texto_valor" id="celular_cliente" name="celular_cliente" value="Celular Cliente">+57 (833) 548-9812</p><br><br>
+                    <label class="texto_llave" for="descripcion_cliente">Descripcion del Cliente:</label>
+                    <p class="texto_valor" id="descripcion_cliente" name="descripcion_cliente" value="Descripción Cliente">Hola, quiero un pastel en forma de corazón para mi aniversario que como nombres ponga: Luisa y Luís - 3 años, es para únicamente 2 personas</p><br><br>
+                    <label class="texto_llave" for="materiales_requeridos">Materiales Requeridos:</label>
+                    <p id="materiales_requeridos" name="materiales_requeridos" value="Materiales Requeridos">
+                        <li class="texto_materiales">Sabor: Tres Leches</li>
+                        <li class="texto_materiales">Sabor: Fresa</li>
+                        <li class="texto_materiales">Adorno: Almendras</li>
+                        <li class="texto_materiales">Adorno: Chocolates</li>
+                        <li class="texto_materiales" style="margin: 0 9% 1% 9%;">Adorno: Rosas</li>
+                    </p>
+                </div>
+                <div class="pedido_cliente">
+                    <label class="texto_llave" for="nombre_cliente">Nombre del Cliente:</label>
+                    <p class="texto_valor" id="nombre_cliente" name="nombre_cliente" value="Nombre Cliente">Mariana Vergara</p><br><br>
+                    <label class="texto_llave" for="correo_cliente">Correo del Cliente:</label>
+                    <p class="texto_valor" id="correo_cliente" name="correo_cliente" value="Correo Cliente">marianita0148@outlook.com</p><br><br>
+                    <label class="texto_llave" for="celular_cliente">Celular del Cliente:</label>
+                    <p class="texto_valor" id="celular_cliente" name="celular_cliente" value="Celular Cliente">443-856-7120</p><br><br>
+                    <label class="texto_llave" for="descripcion_cliente">Descripcion del Cliente:</label>
+                    <p class="texto_valor" id="descripcion_cliente" name="descripcion_cliente" value="Descripción Cliente">Quiero un pastel mitad de un sabor, mitad de otro. Es para alrededor de 20 personas, para dentro de una semana.</p><br><br>
+                    <label class="texto_llave" for="materiales_requeridos">Materiales Requeridos:</label>
+                    <p id="materiales_requeridos" name="materiales_requeridos" value="Materiales Requeridos">
+                        <li class="texto_materiales">Sabor: Pay de Limón</li>
+                        <li class="texto_materiales">Sabor: Naranja</li>
+                        <li class="texto_materiales">Adorno: Chispas de Colores</li>
+                        <li class="texto_materiales" style="margin: 0 9% 1% 9%;">Adorno: Galletas</li>
+                    </p>
+                </div>
+            </div>
+            <div class="centrar_columna">
+                <div class="pedido_cliente">
+                    <label class="texto_llave" for="nombre_cliente">Nombre del Cliente:</label>
+                    <p class="texto_valor" id="nombre_cliente" name="nombre_cliente" value="Nombre Cliente">Gera01567</p><br><br>
+                    <label class="texto_llave" for="correo_cliente">Correo del Cliente:</label>
+                    <p class="texto_valor" id="correo_cliente" name="correo_cliente" value="Correo Cliente">gerardo.2.4.p@gmail.com</p><br><br>
+                    <label class="texto_llave" for="celular_cliente">Celular del Cliente:</label>
+                    <p class="texto_valor" id="celular_cliente" name="celular_cliente" value="Celular Cliente">4428637859</p><br><br>
+                    <label class="texto_llave" for="descripcion_cliente">Descripcion del Cliente:</label>
+                    <p class="texto_valor" id="descripcion_cliente" name="descripcion_cliente" value="Descripción Cliente">Pastel para una empresa de 100 personas</p><br><br>
+                    <label class="texto_llave" for="materiales_requeridos">Materiales Requeridos:</label>
+                    <p id="materiales_requeridos" name="materiales_requeridos" value="Materiales Requeridos">
+                        <li class="texto_materiales">Sabor: Chocolate</li>
+                        <li class="texto_materiales">Sabor: Vino</li>
+                        <li class="texto_materiales">Sabor: Vainilla</li>
+                        <li class="texto_materiales">Sabor: Cajeta</li>
+                        <li class="texto_materiales">Adorno: Fondant</li>
+                        <li class="texto_materiales" style="margin: 0 9% 1% 9%;">Adorno: Chocolate</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Sección Proveedores Pastelero -->
+        <div id="contacto" class="negro centrar_columna">
+            <div class="centrar_fila">
+                <div>
+                    <h3>Proveedores</h3>
+                </div>
+                <div class="centrar_columna">
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/mail.png" alt="Correo Electrónico" name="Mail"><br>
+                        <label class="texto_contacto" for="Mail">proveedorCB@gmail.com<br>contactoProveedor@gmail.com</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/phone.png" alt="Celular de Contacto" name="Cellphone"><br>
+                        <label class="texto_contacto" for="Cellphone">+52 (442) 439-2997<br>+875 (76) 159-7423</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/location.png" alt="Ubicación" name="Location"><br>
+                        <label class="texto_contacto" for="Location">AV. Felipe Carrillo NO. 420.<br>CP: 78145. Querétaro, Qro.</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/schedule.png" alt="Horarios" name="Schedule"><br>
+                        <label class="texto_contacto" for="Schedule">Lunes a Viernes<br>9:00 a.m. - 6:00 p.m.<br>Sábado<br>9:00 a.m. - 2:00 p.m.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript/functions.js"></script>
+</body>
+</html>

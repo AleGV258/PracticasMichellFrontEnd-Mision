@@ -1,0 +1,121 @@
+<!-- GitHub: @AleGV258 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Stock Restante</title>
+</head>
+<body onload=" background_banner(); seccion_navegar();">
+    <div class="todo">
+        <!-- Banner Secundario Pastelero -->
+        <div class="banner_secundario centrar_columna negro" id="banner">
+            <img src="../../assets/images/Logo.png" class="logo" alt="Cosmic Bakery Logo" name="Logo" onclick="index();">
+            <div class="centrar_fila" style="margin: 0 0 0 2%;">
+                <h2>Stock Restante</h2>
+            </div>
+        </div>
+        <!-- Sección Navegar Pastelero -->
+        <div class="seccion_navegar amarillo centrar_columna">
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="tabla();">
+                <h4>Tablas</h4>
+                <div class="barra_horizontal"></div>
+            </div>
+            <div class="barra_vertical"></div>
+            <div class="centrar_fila" style="width: 25%; margin-top: 1%;" onclick="stock();">
+                <h4 id="navegacion">Stock</h4>
+                <div class="barra_horizontal" id="navegacion_seleccion"></div>
+            </div>
+        </div>
+        <!-- Sección Pedidos Pastelero -->
+        <div>
+            <form action="post" id="formulario_pedidos">
+                <div class="centrar_fila">
+                    <h5>Stock restante de los sabores:</h5>
+                    <div class="centrar_columna">
+                        <label class="texto_seleccion_izq" for="sabor1">Chocolate:</label>
+                        <p class="texto_seleccion_der" id="sabor1" name="sabor1" value="Chocolate">30 kg</p>
+                        <label class="texto_seleccion_izq" for="sabor2">Vainilla:</label>
+                        <p class="texto_seleccion_der" id="sabor2" name="sabor2" value="Vainilla">10 kg</p>
+                        <label class="texto_seleccion_izq" for="sabor3">Fresa:</label>
+                        <p class="texto_seleccion_der" id="sabor3" name="sabor3" value="Fresa">8 kg</p>
+                    </div>
+                    <div class="centrar_columna">
+                        <label class="texto_seleccion_izq" for="sabor4">Pay de Limón:</label>
+                        <p class="texto_seleccion_der" id="sabor4" name="sabor4" value="Pay Limón">18 kg</p>
+                        <label class="texto_seleccion_izq" for="sabor5">Tres Leches:</label>
+                        <p class="texto_seleccion_der" id="sabor5" name="sabor5" value="Tres Leches">14 kg</p>
+                        <label class="texto_seleccion_izq" for="sabor6">Cajeta:</label>
+                        <p class="texto_seleccion_der" id="sabor6" name="sabor6" value="Cajeta">13 kg</p>
+                    </div>
+                    <div class="centrar_columna">
+                        <label class="texto_seleccion_izq" for="sabor7">Vino:</label>
+                        <p class="texto_seleccion_der" id="sabor7" name="sabor7" value="Vino">8 kg</p>
+                        <label class="texto_seleccion_izq" for="sabor8">Naranja:</label>
+                        <p class="texto_seleccion_der" id="sabor8" name="sabor8" value="Naranja">5 kg</p>
+                        <label class="texto_seleccion_izq" for="sabor9">Zanahoria:</label>
+                        <p class="texto_seleccion_der" id="sabor9" name="sabor9" value="Zanahoria">2 kg</p>
+                    </div>
+                </div>
+                <div class="centrar_fila">
+                    <h5>Stock restante de los adornos:</h5>
+                    <div class="centrar_columna">
+                        <label class="texto_seleccion_izq" for="adorno1">Frutos Secos:</label>
+                        <p class="texto_seleccion_der" id="adorno1" name="adorno1" value="Frutos Secos">5 kg</p>
+                        <label class="texto_seleccion_izq" for="adorno2">Almendras:</label>
+                        <p class="texto_seleccion_der" id="adorno2" name="adorno2" value="Almendras">10 kg</p>
+                        <label class="texto_seleccion_izq" for="adorno3">Rosas:</label>
+                        <p class="texto_seleccion_der" id="adorno3" name="adorno3" value="Rosas">17 pza</p>
+                    </div>
+                    <div class="centrar_columna">
+                        <label class="texto_seleccion_izq" for="adorno4">Galletas:</label>
+                        <p class="texto_seleccion_der" id="adorno4" name="adorno4" value="Galletas">40 pza</p>
+                        <label class="texto_seleccion_izq" for="adorno5">Chocolates:</label>
+                        <p class="texto_seleccion_der" id="adorno5" name="adorno5" value="Chocolates">25 pza</p>
+                        <label class="texto_seleccion_izq" for="adorno6">Muñecos de Boda:</label>
+                        <p class="texto_seleccion_der" id="adorno6" name="adorno6" value="Muñecos Boda">8 pza</p>
+                    </div>
+                    <div class="centrar_columna" style="margin-bottom: 5%;">
+                        <label class="texto_seleccion_izq" for="adorno7">Fondant:</label>
+                        <p class="texto_seleccion_der" id="adorno7" name="adorno7" value="Fondant">13 pza</p>
+                        <label class="texto_seleccion_izq" for="adorno8">Chispas de Colores:</label>
+                        <p class="texto_seleccion_der" id="adorno8" name="adorno8" value="Chispas Colores">7 kg</p>
+                        <label class="texto_seleccion_izq" for="adorno9">Otros:</label>
+                        <p class="texto_seleccion_der" id="adorno9" name="adorno9" value="Otros" style="font-size: 150%;">Visitar<br>Almacén</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Sección Proveedores Pastelero -->
+        <div id="contacto" class="negro centrar_columna">
+            <div class="centrar_fila">
+                <div>
+                    <h3>Proveedores</h3>
+                </div>
+                <div class="centrar_columna">
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/mail.png" alt="Correo Electrónico" name="Mail"><br>
+                        <label class="texto_contacto" for="Mail">proveedorCB@gmail.com<br>contactoProveedor@gmail.com</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/phone.png" alt="Celular de Contacto" name="Cellphone"><br>
+                        <label class="texto_contacto" for="Cellphone">+52 (442) 439-2997<br>+875 (76) 159-7423</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/location.png" alt="Ubicación" name="Location"><br>
+                        <label class="texto_contacto" for="Location">AV. Felipe Carrillo NO. 420.<br>CP: 78145. Querétaro, Qro.</label>
+                    </div>
+                    <div class="barra_vertical"></div>
+                    <div class="centrar_fila" style="width: 20%;">
+                        <img class="imagen_contacto" src="../../assets/images/schedule.png" alt="Horarios" name="Schedule"><br>
+                        <label class="texto_contacto" for="Schedule">Lunes a Viernes<br>9:00 a.m. - 6:00 p.m.<br>Sábado<br>9:00 a.m. - 2:00 p.m.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript/functions.js"></script>
+</body>
+</html>
