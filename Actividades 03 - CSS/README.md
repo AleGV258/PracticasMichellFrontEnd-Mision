@@ -11,7 +11,7 @@ Por último, para visualizar la página, se debe abrir el directorio "vaccine" y
 - **En esta carpeta podrás encontrar:**
 	- [Index](./vaccine/index.html)
 	- [Styles](./vaccine/pages/CSS/style.css)
-	- [Plan Vacunación](./Planeación_Vacunación)
+	- [Plan Vacunación](./Planeación_Vacunación.pdf)
 
 El link para ver la tabla de Planeación de Vacunación es: https://miro.com/app/board/uXjVOFvAcog=/?invite_link_id=14238464508
 
