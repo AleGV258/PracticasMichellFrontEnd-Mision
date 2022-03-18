@@ -1,0 +1,521 @@
+/* GitHub: @AleGV258 */
+
+/* HTML General */
+*{ 
+    padding: 0%;
+    margin: 0%;
+}
+
+body{ 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../../assets/images/background.png");
+}
+
+/* Estilos de Letras */
+@font-face{ font-family: "Titulo"; src: url("../../assets/fonts/Pokemon_Title.ttf"); }
+@font-face{ font-family: "Texto"; src: url("../../assets/fonts/Pokemon_Text.ttf"); }
+@font-face{ font-family: "Normal"; src: url("../../assets/fonts/Pokemon_Normal.ttf"); }
+
+/* General Styles (Para Todo) */
+.todo{
+    width: 98%;
+    height: 95%;
+    margin: 2.5% 0 0 0;
+}
+.centrar_fila{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 1%;
+    display: flex;
+}
+.centrar_columna{
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    padding: 1%;
+    display: flex;
+}
+
+/* Pokédex */
+.seccion_izquierda{
+    background-color: #FE1A55;
+    height: 70%;
+    width: 40%;
+    padding: 2%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 10px;
+    box-shadow: -7px 10px 20px -4px rgb(0, 0, 0);
+    float: left;
+    box-sizing: content-box;
+}
+.seccion_medio{
+    width: 4%;
+    height: 10%;
+    background-color: #CA215A;
+    padding: 23.7% 0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 10px 20px -10px rgb(0, 0, 0);
+    float: left;
+    box-sizing: content-box;
+}
+.seccion_derecha{
+    background-color: #FE1A55;
+    width: 40%;
+    height: 70%;
+    padding: 2%;
+    margin: 7% 0 0 0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 10px;
+    box-shadow: 7px 10px 20px -4px rgb(0, 0, 0);
+    float: left;
+    box-sizing: content-box;
+}
+
+/* Sección Izquierda */
+h1{
+    font-family: 'Titulo';
+    font-size: 500%;
+    text-align: right;
+    padding: 0 0 3% 0;
+    letter-spacing: 7px;
+    line-height: 100%;
+}
+h2{
+    width: 55%;
+    font-family: 'Texto';
+    font-size: 80%;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0 0 0 3%;
+    line-height: 60%;
+    float: left;
+}
+h3{
+    width: 40%;
+    font-family: 'Texto';
+    font-size: 80%;
+    text-align: center;
+    padding: 2% 0;
+    margin: 0 2% 0 0;
+    line-height: 60%;
+    float: left;
+}
+h4{
+    width: 90%;
+    font-family: 'Texto';
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    padding: 1% 2.5% 3% 2.5%;
+    margin: 0 2.5% 2% 2.5%;
+    border-bottom: 2px dashed #F2F4E7;
+    line-height: 120%;
+    float: left;
+}
+h6{
+    width: 60%;
+    font-family: 'Texto';
+    font-size: 80%;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10% 5% 10%;
+    margin: 0 10% 0 10%;
+    line-height: 60%;
+    float: left;
+}
+input[type="submit"]{
+    width: 35%;
+    height: 10%;
+    background-color: #F9EE60;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Texto';
+    font-size: 100%;
+    text-align: center;
+    margin: 10% 0;
+    padding: 2% 0;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #00AAF7;
+}
+input[type="submit"]:active{
+    background-color: #0C1A57;
+    color: #F2F4E7;
+    width: 34%;
+    padding: 1.8% 0;
+    margin: 10.2% 0 10.2% 1%;
+}
+input[type="text"], input[type="number"]{
+    width: 85%;
+    background-color: #F2F4E7;
+    color: #0C1A57;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Texto';
+    font-size: 100%;
+    text-align: center;
+    padding: 2% 5%;
+}
+.formulario{
+    width: 96%;
+    margin: 6% 0 0 0;
+    padding: 1% 2%;
+    background-color: #CA215A;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.stats{
+    width: 100%;
+    margin: 2% 0 0 0;
+    padding: 2.5% 0;
+    background-color: #F9EE60;
+    border-radius: 5px;
+    border-bottom-left-radius: 50px;
+    float: left;
+    border: 2px solid black;
+}
+.circulo_grande{
+    width: 1%;
+    background-color: #01DBFF;
+    border-radius: 100%;
+    padding: 8%;
+    margin: 2% 0 0 0;
+    float: left;
+    border: 2px solid black;
+    box-shadow: inset -3px -3px 10px 0 black;
+}
+.circulo_chico{
+    width: 0.4%;
+    background-color: #2DF451;
+    border-radius: 100%;
+    padding: 2%;
+    margin: 2% 0 0 0;
+    float: left;
+    position: relative;
+    border: 2px solid black;
+    box-shadow: inset -1px -1px 10px 0 black;
+}
+
+/* Sección Izquierda */
+.visualizacion{
+    width: 98%;
+    margin: 2% 0 0 0;
+    padding: 0 2% 0 0;
+    background-color: #555459;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.borde{
+    width: 50%;
+    height: 90%;
+    float: left;
+    position: relative;
+}
+.imagen{
+    width: 96%;
+    height: 96%;
+    border: 10px double black;
+    border-radius: 5px;
+    background-color: #F2F4E7;
+    margin: 2%;
+}
+.controles{
+    width: 50%;
+    padding: 5% 0 0 11%;
+}
+.control_titulo{
+    width: 40%;
+}
+.control_texto{
+    width: 60%;
+}
+.siguiente{
+    margin: 7% 0 0 0;
+    padding: 1%;
+    width: 30%;
+    height: 70%;
+    cursor: pointer;
+}
+.anterior{
+    margin: 7% 0 0 0;
+    padding: 1%;
+    width: 30%;
+    height: 70%;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.siguiente:hover, .anterior:hover{
+    filter: invert(1);
+}
+.siguiente:active{
+    width: 28%;
+    height: 28%;
+    margin: 8% 1% 0 0;
+}
+.anterior:active{
+    width: 28%;
+    height: 28%;
+    margin: 8% 0 0 1%;
+}
+.more{
+    width: 100%;
+    margin: 2% 0 0 0;
+}
+.tipos{
+    width: 40%;
+    padding: 4% 2% 4% 2%;
+    background-color: #555459;
+    border-radius: 5px;
+    float: left;
+    border: 2px solid black;
+}
+.habilidades{
+    width: 48%;
+    padding: 2%;
+    margin: 0 0 0 2%;
+    background-color: #D1D5CF;
+    border-radius: 5px;
+    border-bottom-right-radius: 50px;
+    float: left;
+    border: 2px solid black;
+}
+.tipo{
+    width: 30%;
+    float: left;
+    margin: 0 5% 0 0;
+}
+h5{
+    width: 60%;
+    color: #F2F4E7;
+    font-weight: 600;
+    font-family: 'Normal';
+    font-size: 170%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 1px;
+    padding: 2% 0;
+    margin: 0 2% 0 0;
+    line-height: 60%;
+    float: left;
+}
+.habilidad1{
+    width: 94%;
+    border: 2px dashed #555459;
+    padding: 2%;
+    margin: 1% 0 1% 0;
+}
+.habilidad2{
+    width: 94%;
+    border: 2px dashed #555459;
+    padding: 2%;
+    margin: 1% 0 1% 0;
+    border-bottom-right-radius: 50px;
+}
+.habilidad_titulo{
+    color: #555459;
+    width: 98%;
+    padding: 2%;
+    margin: 1% 0;
+}
+.habilidad_texto{
+    width: 98%;
+    padding: 2%;
+    margin: 1% 0;
+    line-height: 140%;
+}
+
+/* Responsive */
+@media (max-width: 400px) and (min-width: 350px){
+    h1{
+        padding: 2% 2% 0 0;
+        font-size: 200%;
+        letter-spacing: 1px;
+    }
+    h2, h3{
+        font-size: 80%;
+        line-height: 170%;
+    }
+    h4{
+        font-size: 80%;
+    }
+    input[type="text"], input[type="number"]{
+        width: 70%;
+        font-size: 110%;
+        word-break: break-all;
+        margin: 0 0 0 10%;
+    }
+    input[type="submit"]{
+        width: 80%;
+        font-size: 110%;
+        word-break: break-all;
+    }
+    .seccion_izquierda{
+        width: 80%;
+        margin: 0 0 0 7%;
+    }
+    .seccion_derecha{
+        width: 80%;
+        margin: -166% 0 4% 7%;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 10px;
+        box-shadow: -7px 10px 20px -4px rgb(0, 0, 0);
+    }
+    .seccion_medio{
+        padding: 170% 0;
+    }
+    .centrar_columna{
+        display: block;
+    }
+    .formulario{
+        margin: 15% 0 0 1%;
+        padding: 5% 0 0 0;
+    }
+    .stats{
+        width: 96%;
+        margin: 2% 0 0 1%;
+    }
+    .controles{
+        width: 100%;
+        height: 30vh;
+        padding: 0 0 0 10%;
+        margin: 0%;
+    }
+    .control_titulo{
+        margin: -3% 0 0 -9%;
+    }
+    .control_texto{
+        margin: -11.3% 0 0 31%;
+    }
+    .siguiente, .anterior{
+        width: 20%;
+        margin: 15% 0 15% 0;
+    }
+    .siguiente:active, .anterior:active{
+        width: 19%;
+        margin: 15% 0 15% 0;
+    }
+    .tipos{
+        width: 96%;
+    }
+    .habilidades{
+        width: 96%;
+        margin: 2% 0 0 -0.5%;
+        border-bottom-left-radius: 50px;
+    }
+    .habilidad2{
+        border-bottom-left-radius: 50px;
+    }
+    .tipo{
+        width: 20%;
+        margin: 0 0 0 20%;
+    }
+    h5{
+        width: 50%;
+        padding: 8% 0;
+    }
+}
+@media (max-width: 800px) and (min-width: 401px){
+    h1{
+        font-size: 250%;
+        letter-spacing: 1px;
+        line-height: 120%;
+    }
+    h2, h3, h4{
+        font-size: 50%;
+    }
+    h5{
+        font-size: 90%;
+        margin: 10.9% 0;
+    }
+    h6{
+        margin: -5% 10% 0 10%;
+    }
+    input[type="submit"], input[type="text"], input[type="number"]{
+        font-size: 50%;
+    }
+    .todo{
+        margin: 0.8% 0 0 0;
+    }
+    .habilidades{
+        width: 46%;
+    }
+    .seccion_medio{
+        padding: 23.4% 0;
+    }
+    .seccion_derecha{
+        margin: 3.5% 0 0 0;
+    }
+}
+@media (max-width: 1366px) and (min-width: 1281px){
+    .todo{
+        margin: 0.5% 0 0 0;
+    }
+    .seccion_medio{
+        padding: 23.3% 0;
+    }
+    .seccion_derecha{
+        margin: 6% 0 0 0;
+    }
+}
+@media (max-width: 1440px) and (min-width: 1370px){
+    .todo{
+        margin: 8% 0 0 0;
+    }
+    .seccion_medio{
+        padding: 22.9% 0;
+    }
+    .seccion_derecha{
+        margin: 5.5% 0 0 0;
+    }
+}
+@media (max-width: 1680px) and (min-width: 1450px){
+    .todo{
+        margin: 8% 0 0 0;
+    }
+    .seccion_medio{
+        padding: 22% 0;
+    }
+    .seccion_derecha{
+        margin: 4.5% 0 0 0;
+    }
+    .habilidades{
+        padding: 3.4% 2.2%;
+    }
+}
+@media (max-width: 1920px) and (min-width: 1700px){
+    .todo{
+        margin: 4% 0 0 0;
+    }
+    .seccion_medio{
+        padding: 22.5% 0;
+    }
+    .seccion_derecha{
+        margin: 5% 0 0 0;
+    }
+    .habilidades{
+        padding: 2.5% 2.4%;
+    }
+    h1{
+        line-height: 120%;
+    }
+    h2, h3, h4{
+        font-size: 120%;
+    }
+    input[type="text"], input[type="number"]{
+        font-size: 120%;
+    }
+}

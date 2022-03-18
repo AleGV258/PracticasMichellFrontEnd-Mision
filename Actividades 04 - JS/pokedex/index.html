@@ -1,0 +1,98 @@
+<!-- GitHub: @AleGV258 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/CSS/style.css">
+    <title>Pokédex</title>
+</head>
+<body>
+    <div class="todo centrar_columna">
+        <!-- Primera Sección -->
+        <div class="seccion_izquierda">
+            <div class="encabezado">
+                <div class="circulo_grande"></div>
+                <div class="circulo_chico"></div>
+                <h1>Pokédex</h1>
+            </div>
+            <div class="formulario" id="buscar_pokemon">
+                <div class="centrar_columna">
+                    <div class="centrar_fila">
+                        <input type="text" name="pokeName" id="pokeName" placeholder="Nombre Pokémon"><br>
+                        <h6>or</h6>
+                        <input type="number" name="pokeID" id="pokeID" placeholder="ID Pokémon">
+                    </div>
+                    <input type="submit" value="Buscar" onclick="fetchPokemon()">
+                </div>
+            </div>
+            <div class="stats">
+                <h4 id="stat">Pokémon</h4>
+                <h2>VIDA:</h2>
+                <h3 id="stat1">-</h3>
+                <h2>ATAQUE:</h2>
+                <h3 id="stat2">-</h3>
+                <h2>DEFENSA:</h2>
+                <h3 id="stat3">-</h3>
+                <h2>ATAQUE-ESPECIAL:</h2>
+                <h3 id="stat4">-</h3>
+                <h2>DEFENSA-ESPECIAL:</h2>
+                <h3 id="stat5">-</h3>
+                <h2>VELOCIDAD:</h2>
+                <h3 id="stat6">-</h3>
+            </div>
+        </div>
+        <!-- Sección del Medio -->
+        <div class="seccion_medio"></div>
+        <!-- Segunda Sección -->
+        <div class="seccion_derecha">
+            <div class="visualizacion">
+                <div class="centrar_columna">
+                    <div class="borde">
+                        <img src="./assets/images/pokeball1.gif" alt="Pokémon" class="imagen" id="imagen_pokemon">
+                    </div>
+                    <div class="controles">
+                        <div class="centrar_columna">
+                            <img src="./assets/images/arrow.png" alt="Anterior" class="anterior" onclick="anterior()">
+                            <img src="./assets/images/arrow.png" alt="Siguiente" class="siguiente" onclick="siguiente()">
+                        </div><br>
+                        <div class="centrar_columna">
+                            <h2 class="control_titulo">Altura:</h2>
+                            <h3 class="control_texto" id="stat7">-</h3>
+                        </div><br>
+                        <div class="centrar_columna">
+                            <h2 class="control_titulo">Peso:</h2>
+                            <h3 class="control_texto" id="stat8">-</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <div class="tipos">
+                    <div class="centrar_columna">
+                        <img src="./assets/images/none.png" alt="Tipo Primario" class="tipo" id="img_tipo1">
+                        <h5 id="tipo1">-</h5>
+                    </div>
+                    <div class="centrar_columna">
+                        <img src="./assets/images/none.png" alt="Tipo Secundario" class="tipo" id="img_tipo2">
+                        <h5 id="tipo2">-</h5>
+                    </div>
+                </div>
+                <div class="habilidades centrar_fila">
+                    <div class="habilidad1">
+                        <h2 class="habilidad_titulo">Habilidad:</h2><br>
+                        <h3 class="habilidad_texto" id="habilidad1">-</h3>
+                    </div>
+                    <div class="habilidad2">
+                        <h2 class="habilidad_titulo">Habilidad:</h2><br>
+                        <h3 class="habilidad_texto" id="habilidad2">-</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script de la Pokédex -->
+    <footer>
+        <script src="./pages/JS/function.js"></script>
+    </footer>
+</body>
+</html>
