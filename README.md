@@ -22,8 +22,5 @@ Link del Repositorio: https://github.com/AleGV258/PracticasMichellFrontEnd-Misio
 	- [02 - HTML](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%20%2002%20-%20HTML)
 	- [03 - CSS](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%2003%20-%20CSS)
 	- [04 - JS](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%2004%20-%20JS)
-	- [05 - VUEJS]
-	- [06 - VUEX]
-	- [07 - ANGULAR]
-	- [08 - AZURE]
+	- [05 y 06 - VUEJS y VUEX](https://github.com/AleGV258/PracticasMichellFrontEnd-Mision/tree/main/Actividades%2005%20y%2006%20-%20VUEJS%20y%20VUEX)
 
