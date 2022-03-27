@@ -4,7 +4,7 @@
 
 En esta carpeta podrás encontrar los archivos (HTML, JS y VUE) de la actividad de FrontEnd-Mision para Launch X del módulo 05 y 06 - VUEJS y VUEX.
 
-Además, en el siguiente link podrás encontrar la página desplegada: .
+Además, en el siguiente link podrás encontrar la página desplegada: https://cosmic-bakery-alegv258.herokuapp.com/#/
 
 Por último, para visualizar la página, se debe descargar el archivo zip en este repositorio, posteriormente, inicializar un proyecto con vue y vuex, o en su debido caso, tener los archivos del proyecto, despues, iniciar el servidor con "npm run serve" e ir a "localhost:8080/".
 
