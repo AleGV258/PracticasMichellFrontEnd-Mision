@@ -5,11 +5,9 @@ Objetivo: Este repositorio son ejercicios realizados y contestados por AleGV258 
 
 Propietario: Este repositorio pertenece a Michell Alejandro García Vargas.
 
-GitHub: @AleGV258
+GitHub: https://github.com/AleGV258
 
 Correo: ale.gv258@gmail.com
-
-Correo Institucional: mgarcia200@alumnos.uaq.mx
 
 Link del Repositorio: https://github.com/AleGV258/PracticasMichellFrontEnd-Mision
 
